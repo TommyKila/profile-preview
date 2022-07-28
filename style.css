@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -45% 180%, 135% -120%;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1em;
+    margin: 9.5em 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.avatar {
+    border-radius: 3.5em;
+    border: 0.3em solid hsl(0, 0%, 100%);
+    width: 30%;
+    margin: -3.5em 0 1.25em 0;
+}
+
+.pattern {
+    border-radius: 1em 1em 0 0;
+    width: 100%;
+}
+
+.stats {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 1.75em 0 1.25em 0;
+}
+
+.nums {
+    margin-bottom: 0.25em;
+}
+
+.name,
+.nums {
+    color: hsla(229, 23%, 23%, 0.9);
+}
+
+.nums,
+.info h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.age,
+.city,
+.stat-type {
+    color: hsla(227, 10%, 46%, 0.9);
+    font-weight: 400;
+}
+
+.city {
+    font-size: 1rem;
+    margin-top: 0.5em;
+}
+
+.stat-type {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+}
+
+.solid-line {
+    color: hsla(0, 0%, 59%, 0.2);
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main {
+        width: 36%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main {
+        width: 90%;
+    }
+
+    body {
+        background-position: 40% 40%, 100% 100%;
+    }
+}
